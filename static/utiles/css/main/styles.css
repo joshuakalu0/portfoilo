@@ -1,0 +1,100 @@
+@import url("./default-style.css");
+@import url("./btn-style.css");
+@import url("./ulit-style.css");
+@import url("./card-style.css");
+
+:root {
+	--default: rgb(190, 189, 189);
+	--dlite: rgb(221, 217, 217);
+	--dliter: rgb(233, 230, 230);
+	--dhover: rgb(170, 167, 167);
+	--dblack: rgb(78, 78, 78);
+}
+
+
+.form input,
+.form textarea,
+.form select,
+.input-style {
+	position: relative;
+	border: 2px solid var(--default);
+	border-radius: 3px;
+	width: calc(100% - 100px);
+	margin: 4px;
+	height: 1.8em;
+	padding: 2px;
+	font-size: 1.2em;
+	background-color: rgb(241, 241, 241);
+	padding-left: 5px;
+}
+.form input:focus,
+.form textarea:focus,
+.input-style:focus {
+	box-shadow: 0px 0px 3px 0.1em var(--dlite);
+	/* box-shadow: 0px 0px 2px 3px var(--dblack); */
+}
+textarea {
+	height: 10em;
+}
+.form input:placeholder-shown,
+.form textarea:placeholder-shown,
+.input-style:placeholder-shown {
+	color: var(--dliter);
+}
+.form-outline {
+	outline: none;
+	border: none;
+	background-color: #f2f2f3;
+	border-bottom: 1px solid gray;
+	transition: 0.2s;
+}
+.form-outline:focus {
+	border: none;
+	border-bottom: 2px solid gray;
+}
+/* tables */
+.table {
+	height: auto;
+	width: 100%;
+	background-color: var(--dliter);
+	border-collapse: collapse;
+	overflow-x: scroll;
+	overflow-y: scroll;
+}
+.table thead * {
+	background-color: var(--dlite);
+	font-size: 1.1em;
+	font-weight: 700;
+	color: rgb(70, 69, 69);
+}
+.table tbody * {
+	height: auto;
+	color: rgb(29, 29, 29);
+}
+.table tfoot * {
+	background-color: var(--dlite);
+	color: rgb(28, 124, 248);
+	font-size: 0.9em;
+	height: auto;
+	font-style: oblique;
+}
+.table tr {
+	height: 1.2em;
+	padding: 5px;
+}
+.table td {
+	/* border: 2px solid red; */
+	height: 1.2em;
+	padding: 5px;
+}
+
+.form {
+	background-color: rgba(24, 23, 23, 0.705);
+	width: 90%;
+	height: auto;
+	margin: auto auto;
+	padding: 10px 5px;
+}
+.form label {
+	color: white;
+}

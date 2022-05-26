@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=
+    , initial-scale=1.0"
+		/>
+        {% block title%}
+                    {% endblock title%}
+		<!-- <title>Document</title> -->
+		<link rel="stylesheet" href="{% static './utiles/css/style.css' %}" />
+	</head>
+	<body>
+		<div class="full-container">
+			<div class="type-text">
+				<p data-type="yes"> </span></p><span data-type="blink"></span>
+			   </div>
+			<div class="inner-wrapper">
+				<main>
+                    {% block content%}
+                    {% endblock content%}
+
+                </main>
+				<footer>
+					<div class="footer">
+                        {% block footer%}
+                    {% endblock footer%}
+						<!-- <span class=""> <p><a>works</a></p></span>
+					<span class=""><p>tutorial</p></span>
+					<span class=""><p>contact me</p></span> -->
+					  </div>
+				</footer>
+			</div>
+		</div>
+		{% block script%}
+		{% endblock script%}
+		<script src="{% static './utiles/customjs/library.js' %}"></script>
+
+		<script type="module" src="{% static './utiles/js/main.js' %}"></script>
+	</body>
+</html>

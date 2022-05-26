@@ -1,0 +1,27 @@
+[data-type="yes"] {
+	height: 100%;
+}
+[data-type="yes"]::after {
+	content: "|";
+	display: inline;
+	background-color: black;
+	color: white;
+	/* position: relative; */
+	animation: key 0.3s infinite;
+}
+[data-type="blink"] {
+	content: "|";
+	display: inline;
+	background-color: black;
+	color: white;
+	/* position: relative; */
+	animation: key 0.3s infinite;
+}
+@keyframes key {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
